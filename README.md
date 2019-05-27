@@ -29,7 +29,10 @@ correct the issue.
 ## Web Server Performance
 
 Due to the nature of the V8 engine being just in time compiled simply running node.js as a command does not show the
-whole picture.
+whole picture. So let us boot up some webservers in docker to get another look. For this I will assume you have docker
+installed and knowledge how to use docker and docker-compose.
+
+Boot up web servers:
 
 ```bash
 docker-compose up 
@@ -47,5 +50,6 @@ For Node.js:
 ```
 http://127.0.0.1:8080/?num=4096
 ```
+
 
 Thanks!
