@@ -46,6 +46,6 @@ $startTime = hrtime(true);
 bubbleSort($myArray);
 $endTime   = hrtime(true);
 
-echo ($endTime - $startTime) / 1000000, 'ms', PHP_EOL;
+echo ($endTime - $startTime) / 1000000, ' ms', PHP_EOL;
 
-echo print_r($myArray, true), PHP_EOL;
+// echo print_r($myArray, true), PHP_EOL;

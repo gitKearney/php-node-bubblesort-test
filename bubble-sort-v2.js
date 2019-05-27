@@ -20,21 +20,21 @@ const bubbleSort = (a) => {
 const myArray = [];
 
 // add numbers divisible by 2
-for (let x = 64; x >= 0; x--) {
+for (let x = 1024; x >= 0; x--) {
   if (x % 2 === 0) {
   myArray.push(x);
   }
 }
 
 // add numbers divisible by 3
-for (let x = 64; x >= 0; x--) {
+for (let x = 1024; x >= 0; x--) {
   if (x % 3 === 0) {
     myArray.push(x);
   }
 }
 
 // add numbers divisible by 7
-for (let x = 64; x >= 0; x--) {
+for (let x = 1024; x >= 0; x--) {
   if (x % 7 === 0) {
     myArray.push(x);
   }
@@ -47,4 +47,4 @@ bubbleSort(myArray);
 const endTime = process.hrtime.bigint();
 
 console.log(`${Number(endTime - startTime) / 1000000} ms`);
-console.log(myArray);
+// console.log(myArray);
