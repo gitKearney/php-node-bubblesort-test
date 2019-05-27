@@ -2,9 +2,11 @@ const bubbleSort = (a) => {
 	const len = a.length;
 
 	let sorted = false;
+	let i = 0;
+
 	while(!sorted) {
 		sorted = true;
-		for (let i = 0; i < len; i++) {
+		for (i; i < len; i++) {
 			let current = a[i];
 			let next    = a[i + 1];
 
@@ -26,4 +28,4 @@ const endTime = process.hrtime(startTime);
 
 console.log(`${endTime[0]} seconds ${endTime[1] / 1000000} milliseconds`);
 
-// console.log('sorted: ', array);
+console.log('sorted: ', myArray);
