@@ -4,11 +4,10 @@ function bubbleSort(array &$a)
 {
   $len = count($a) - 1;
   $sorted = false;
-  $i = 0;
 
   while (!$sorted) {
     $sorted = true;
-    for ($i; $i < $len; $i++) {
+    for ($i = 0; $i < $len; $i++) {
       $current = $a[$i];
       $next = $a[$i + 1];
 
@@ -34,4 +33,4 @@ echo 'execution time: ', ($endTime - $startTime), ' seconds ',
   sprintf("%.6f microseconds", $elapsedMicroTime),
   PHP_EOL;
 
-// print_r($myArray);
+print_r($myArray);

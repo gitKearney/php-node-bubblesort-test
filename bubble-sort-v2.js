@@ -2,11 +2,9 @@ const bubbleSort = (a) => {
 	const len = a.length;
 
 	let sorted = false;
-	let i = 0;
-
 	while(!sorted) {
 		sorted = true;
-		for (i; i < len; i++) {
+		for (let i = 0; i < len; i++) {
 			let current = a[i];
 			let next    = a[i + 1];
 
