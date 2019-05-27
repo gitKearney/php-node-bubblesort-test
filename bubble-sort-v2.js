@@ -17,13 +17,34 @@ const bubbleSort = (a) => {
 	}
 };
 
-// const myArray = [3, 4, 1, 3, 5, 1, 92, 2, 4124, 424, 52, 12];
-const myArray = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+const myArray = [];
 
-const startTime = process.hrtime();
+// add numbers divisible by 2
+for (let x = 64; x >= 0; x--) {
+  if (x % 2 === 0) {
+  myArray.push(x);
+  }
+}
+
+// add numbers divisible by 3
+for (let x = 64; x >= 0; x--) {
+  if (x % 3 === 0) {
+    myArray.push(x);
+  }
+}
+
+// add numbers divisible by 7
+for (let x = 64; x >= 0; x--) {
+  if (x % 7 === 0) {
+    myArray.push(x);
+  }
+}
+
+console.log(`myArray has ${myArray.length} elements`);
+
+const startTime = process.hrtime.bigint();
 bubbleSort(myArray);
-const endTime = process.hrtime(startTime);
+const endTime = process.hrtime.bigint();
 
-console.log(`${endTime[0]} seconds ${endTime[1] / 1000000} milliseconds`);
-
-console.log('sorted: ', myArray);
+console.log(`${Number(endTime - startTime) / 1000000} ms`);
+console.log(myArray);
