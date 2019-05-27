@@ -40,12 +40,11 @@ for ($x = 1024; $x >= 0; $x--) {
   }
 }
 
-echo 'array contains ', count($myArray), ' elements', PHP_EOL;
-
 $startTime = hrtime(true);
 bubbleSort($myArray);
 $endTime   = hrtime(true);
 
-echo ($endTime - $startTime) / 1000000, ' ms', PHP_EOL;
+echo '[PHP] array contains ', count($myArray), ' elements, execution time: ',
+  ($endTime - $startTime) / 1000000, ' ms', PHP_EOL;
 
 // echo print_r($myArray, true), PHP_EOL;

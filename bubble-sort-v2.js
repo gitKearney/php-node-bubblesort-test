@@ -40,11 +40,12 @@ for (let x = 1024; x >= 0; x--) {
   }
 }
 
-console.log(`myArray has ${myArray.length} elements`);
+console.log();
 
 const startTime = process.hrtime.bigint();
 bubbleSort(myArray);
 const endTime = process.hrtime.bigint();
 
-console.log(`${Number(endTime - startTime) / 1000000} ms`);
+console.log(`[V8] array contains ${myArray.length} elements, execution time:`,
+    `${Number(endTime - startTime) / 1000000} ms`);
 // console.log(myArray);
