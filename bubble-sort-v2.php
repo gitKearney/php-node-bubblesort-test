@@ -18,23 +18,24 @@ function bubbleSort(array &$a)
 }
 
 $myArray = [];
+$numberPool = 4096;
 
 // add numbers divisible by 2
-for ($x = 1024; $x >= 0; $x--) {
+for ($x = $numberPool; $x >= 0; $x--) {
   if ($x % 2 === 0) {
     $myArray[] = $x;
   }
 }
 
 // add numbers divisible by 3
-for ($x = 1024; $x >= 0; $x--) {
+for ($x = $numberPool; $x >= 0; $x--) {
   if ($x % 3 === 0) {
     $myArray[] = $x;
   }
 }
 
 // add numbers divisible by 7
-for ($x = 1024; $x >= 0; $x--) {
+for ($x = $numberPool; $x >= 0; $x--) {
   if ($x % 7 === 0) {
     $myArray[] = $x;
   }
