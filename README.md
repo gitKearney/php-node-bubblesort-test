@@ -35,7 +35,7 @@ whole picture.
 docker-compose up 
 ```
 
-Open browser and go to each url.
+Open browser and go to each url. Feel free to change the "num" param to suit various tests.
 
 For PHP:
 
