@@ -1,9 +1,8 @@
 <?php
+
 require_once './bubble-sort-core.php';
 
-$myArray = [];
-$numberPool = 4096;
-
+$numberPool = (int) $_REQUEST['num'];
 $myArray = buildArray($numberPool);
 
 $startTime = hrtime(true);

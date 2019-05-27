@@ -1,0 +1,17 @@
+version: '3'
+services:
+  php:
+    network_mode: host
+    build:
+      context: ./
+      dockerfile: Dockerfilephp
+    volumes:
+    - $PWD:/var/www/html
+    container_name: phpsort
+  node:
+
+    build:
+      context: ./
+      dockerfile: Dockerfilenode
+    network_mode: host
+    container_name: nodesort
