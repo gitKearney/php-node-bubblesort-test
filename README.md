@@ -25,4 +25,27 @@ At 1,000 elements PHP is 5 times slower than Node
 If I've made a mistake in time calculations, please let me know, and I'll
 correct the issue.
 
+
+## Web Server Performance
+
+Due to the nature of the V8 engine being just in time compiled simply running node.js as a command does not show the
+whole picture.
+
+```bash
+docker-compose up 
+```
+
+Open browser and go to each url.
+
+For PHP:
+
+```
+http://127.0.0.1/bubble-sort-v2-http.php?num=4096
+```
+
+For Node.js:
+```
+http://127.0.0.1:8080/?num=4096
+```
+
 Thanks!
