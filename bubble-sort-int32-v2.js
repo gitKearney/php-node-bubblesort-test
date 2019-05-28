@@ -2,13 +2,13 @@ const bubbleSort = (a) => {
 	const len = a.length;
 
 	let sorted = false;
-	while(!sorted) {
+	while (!sorted) {
 		sorted = true;
 		for (let i = 0; i < len; i++) {
 			let current = a[i];
-			let next    = a[i + 1];
+			let next = a[i + 1];
 
-			if(next < current) {
+			if (next < current) {
 				a[i] = next;
 				a[i + 1] = current;
 				sorted = false;
@@ -40,7 +40,7 @@ function initArray() {
 			myArray.push(x);
 		}
 	}
-	return myArray;
+	return new Int32Array(myArray);
 };
 
 function checkSort(myArray) {
